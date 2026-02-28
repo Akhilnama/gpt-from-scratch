@@ -8,7 +8,7 @@ text = requests.get(url).text
 # vocab
 chars = sorted(list(set(text)))
 vocab_size = len(chars)
-# print(f"Vocab size:{vocab_size}")
+print(f"Vocab size:{vocab_size}")
 # print(chars)
 
 # mapping
@@ -52,8 +52,8 @@ def get_batch(data):
     return x,y
 
 x,y = get_batch(data)
-print(f"Input:{decode(x.tolist())}")
-print(f"Target:{decode(y.tolist())}")
+# print(f"Input:{decode(x.tolist())}")
+# print(f"Target:{decode(y.tolist())}")
 
 
 
